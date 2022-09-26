@@ -85,7 +85,7 @@ btn.addEventListener("mousedown", () => {
    window.print();
 });
 //--------------------------------------------------------------------------------------------------------------------
-const phohoM = document.querySelector("three #pawelforemnyziwoniczaM"),
+const photoM = document.querySelector("three #pawelforemnyziwoniczaM"),
    titleM = document.querySelector("three #alan1M"),
    subM = document.querySelector("three #alan2M"),
    auM = document.querySelector("three #alan3M"),
@@ -106,8 +106,8 @@ subM.addEventListener("input", () => {
 nrM.addEventListener("input", () => {
    document.querySelector("three .nr").innerText = nrM.value;
 });
-phohoM.addEventListener("input", () => {
-   document.querySelector("three .imgMain").style.backgroundImage = `url("${phohoM.value}")`;
+photoM.addEventListener("input", () => {
+   document.querySelector("three .imgMain").style.backgroundImage = `url("${photoM.value}")`;
 });
 clrM1.addEventListener("input", () => {
    document.querySelector("three .content").style.setProperty("--clr1", clrM1.value);
@@ -128,5 +128,59 @@ auM.addEventListener("input", () => {
    document.querySelector("three .authors").innerHTML = auM.value.replace(/ /g, "&nbsp;").replace(/>/g, "&gt;").replace(/</g, "&lt;").replace(/\\n/g, "<br>");
 });
 btn.addEventListener("mousedown", () => {
+   window.print();
+});
+//--------------------------------------------------------------------------------------------------------------------
+const photoR1 = document.querySelector("four #pawelforemnyziwoniczaR"),
+   photoR2 = document.querySelector("four #pawelforemnyziwoniczaR2"),
+   titleR1 = document.querySelector("four #alan1R"),
+   titleR2 = document.querySelector("four #alan2R"),
+   subjectR = document.querySelector("four #alan3R"),
+   descR = document.querySelector("four #alan4R"),
+   nrR = document.querySelector("four #alan5R"),
+   clrR1 = document.querySelector("four #alan6R"),
+   clrR2 = document.querySelector("four #alan7R"),
+   clrR3 = document.querySelector("four #alan8R"),
+   clrR4 = document.querySelector("four #alan9R"),
+   clrR5 = document.querySelector("four #alan10R"),
+   btnR = document.querySelector("four #alanDziokXDR");
+
+titleR1.addEventListener("input", () => {
+   document.querySelector("four .title1").innerText = titleR1.value;
+});
+titleR2.addEventListener("input", () => {
+   document.querySelector("four .title2").innerText = titleR2.value;
+});
+descR.addEventListener("input", () => {
+   document.querySelector("four .subtitle").innerText = descR.value;
+});
+nrR.addEventListener("input", () => {
+   document.querySelector("four .nr").innerText = nrR.value;
+});
+photoR1.addEventListener("input", () => {
+   document.querySelector("four .imgSmall").style.backgroundImage = `url("${photoR1.value}")`;
+});
+photoR2.addEventListener("input", () => {
+   document.querySelector("four .imgMain").style.backgroundImage = `url("${photoR2.value}")`;
+});
+clrR1.addEventListener("input", () => {
+   document.querySelector("four .card").style.setProperty("--clr1", clrR1.value);
+});
+clrR2.addEventListener("input", () => {
+   document.querySelector("four .card").style.setProperty("--clr2", clrR2.value);
+});
+clrR3.addEventListener("input", () => {
+   document.querySelector("four .card").style.setProperty("--clr3", clrR3.value);
+});
+clrR4.addEventListener("input", () => {
+   document.querySelector("four .card").style.setProperty("--clr4", clrR4.value);
+});
+clrR5.addEventListener("input", () => {
+   document.querySelector("four .card").style.setProperty("--clr5", clrR5.value);
+});
+subjectR.addEventListener("input", () => {
+   document.querySelector("four .subject").innerHTML = subjectR.value;
+});
+btnR.addEventListener("mousedown", () => {
    window.print();
 });
