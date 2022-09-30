@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --aniLineTime: 1s;
+  --aniMainTime: 2s;
+}
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background-color: rgb(77, 77, 77);
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 50px;
+  background-color: #161616;
+}
+html,
+body {
+  overflow-x: hidden;
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  color: white;
+  background-color: #232323;
+}
+.webgl {
+  /* position: absolute;
+  top: 0;
+  left: 0; */
+  outline: none;
+}
+
+.title {
+  position: absolute;
+  z-index: 1;
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  place-content: center;
+}
+
+.content {
+  display: flex;
+  gap: 5em;
+  width: 100%;
+  padding-top: 3em;
+  position: relative;
+}
+
+.content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-bottom: 1px solid white;
+  transform: scaleX(0);
+  transform-origin: center;
+  animation: horizontalShow var(--aniLineTime) ease-out forwards;
+}
+h1 {
+  font-size: 4rem;
+  width: 50vw;
+  line-height: 97%;
+  text-align: right;
+  animation: verticalShow var(--aniMainTime) ease-out var(--aniLineTime) forwards;
+}
+.title span {
+  animation: verticalShow 8s ease-out 3s forwards;
+}
+h1,
+.title span {
+  flex-basis: 0;
+  flex-grow: 1;
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+thin {
+  font-weight: 200;
+}
+ascii {
+  position: relative;
+  width: 100%;
+  height: 75vh;
+  display: block;
+}
+ascii .ascii {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10%;
+  color: rgb(243, 243, 243);
+  font-family: "Courier";
+  font-size: 6pt;
+  line-height: 4pt;
+}
+ascii .ygrr {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 100px;
+  color: rgb(255, 255, 255);
+  font-family: "Roboto", sans-serif;
+  font-size: 2em;
+}
+projects {
+  display: block;
+  top: calc(100vh + 75vh);
+  padding: 100px;
+  box-sizing: border-box;
+}
+projects .work {
+  font-size: 2.2em;
+}
+projects ul {
+  list-style-type: none;
+  margin-top: 20px;
+  width: fit-content;
+}
+projects ul li {
+  padding: 10px 5px;
+  margin-block: 5px;
+  background-color: rgba(255, 255, 255, 0.034);
+  width: 100%;
+  transition-duration: 250ms;
+  cursor: pointer;
+}
+projects ul li:hover {
+  background-color: rgba(255, 255, 255, 0.103);
+  width: 120%;
+}
+projects ul li a {
+  color: white;
+  text-decoration: none;
+}
+@keyframes verticalShow {
+  100% {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+}
+@keyframes horizontalShow {
+  100% {
+    transform: scaleX(1);
+  }
+}
+@media (max-width: 1100px) {
+  ascii .ascii {
+    top: 50%;
+    transform: translate(50%, -50%);
+    right: 50%;
+  }
+  ascii .ygrr {
+    top: 100%;
+    transform: translateX(-50%);
+    left: 50%;
+  }
+}
