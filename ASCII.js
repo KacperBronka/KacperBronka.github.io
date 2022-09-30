@@ -1,10 +1,10 @@
-const density = "Ñ@#W$&9876543210?!aboc;:+=-,._";
+const density = "Ñ@#W$&9876543210?!aboc;:+=-,._ ";
 
 let video;
 let asciiDiv;
 
 function preload() {
-  video = loadImage("https://media.tenor.com/x8v1oNUOmg4AAAAM/rickroll-roll.gif");
+  video = loadImage("rick.gif");
 }
 function setup() {
   noCanvas();
