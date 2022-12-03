@@ -8,14 +8,25 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/p5@1.4.2/lib/p5.js" defer></script>
     <script src="script.js" defer></script>
-    <script src="ASCII.js" defer></script>
+    <script src="sketch.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="shortcut icon" type="image/x-icon" href="logo.png" />
     <title>SemiGodProgrammer</title>
   </head>
   <body>
+    <nav>
+      <a href="https://github.com/SemiGodProgrammer" target="_blank"><i class="fa-brands fa-github"></i>My github</a>
+      <a href="#projects"><i class="fa-solid fa-arrow-down"></i>My projects</a>
+    </nav>
     <div class="title">
       <div class="content">
         <h1>
@@ -30,25 +41,28 @@
       <span class="ygrr">You just got Rick Rolled LMAO</span>
       <div class="ascii"></div>
     </ascii>
-    <projects>
-      <span class="work">My projects or something IDK</span>
-      <ul>
-        <li>
-          <a href="/projects/Planer">Planer tutoriali do programowania</a>
-        </li>
-        <li>
-          <a href="/projects/VidToASCII">Video z kamery na tekst</a>
-        </li>
-        <li>
-          <a href="/AtariBreakout">Atari Breakout</a>
-        </li>
-        <li>
-          <a href="/projects/FractalTree">Fractal Tree using p5.js</a>
-        </li>
-        <li>
-          <a href="/projects/galacticSim">Symulacja grawitacji</a>
-        </li>
-      </ul>
+    <projects id="projects">
+      <div class="left">
+        <span class="work">My projects or something IDK</span>
+        <ul>
+          <a href="/projects/Planer">
+            <li>Planer tutoriali do programowania</li>
+          </a>
+          <a href="/projects/VidToASCII">
+            <li>Video z kamery na tekst</li>
+          </a>
+          <a href="/AtariBreakout">
+            <li>Atari Breakout</li>
+          </a>
+          <a href="/projects/FractalTree">
+            <li>Fractal Tree using p5.js</li>
+          </a>
+          <a href="/projects/galacticSim">
+            <li>Symulacja grawitacji</li>
+          </a>
+        </ul>
+      </div>
+      <div class="right"></div>
     </projects>
   </body>
 </html>

@@ -7,8 +7,12 @@ const star = loader.load("./star.png");
 // Scene
 const scene = new THREE.Scene();
 
+let boxSize = 1;
+if (window.innerWidth < 500) {
+  boxSize = 0.8;
+}
 // Objects
-const geometry = new THREE.BoxGeometry(1, 1, 1, 30, 30, 30);
+const geometry = new THREE.BoxGeometry(boxSize, boxSize, boxSize, 30, 30, 30);
 
 const particlesGeometry = new THREE.BufferGeometry();
 const particlesCnt = 5000;
