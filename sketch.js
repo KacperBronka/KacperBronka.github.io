@@ -42,6 +42,8 @@ let rick = new p5((sketch) => {
   };
 });
 
+if(window.innerWidth>=1100){
+  
 let gif = new p5((sketch) => {
   let canvas2;
   let numbers = [];
@@ -87,3 +89,4 @@ let gif = new p5((sketch) => {
     numbers = [];
   };
 });
+}
