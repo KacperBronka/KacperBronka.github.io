@@ -3,7 +3,7 @@ const canvas = document.querySelector("canvas.webgl");
 
 //Texture Loader
 const loader = new THREE.TextureLoader();
-const star = loader.load("./star.png");
+const star = loader.load("img/star.png");
 // Scene
 const scene = new THREE.Scene();
 

@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="style.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/p5@1.4.2/lib/p5.js" defer></script>
-    <script src="script.js" defer></script>
-    <script src="sketch.js" defer></script>
+    <script src="js/script.js" defer></script>
+    <script src="js/sketch.js" defer></script>
+    <script src="js/trail.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet" />
@@ -20,17 +21,18 @@
       referrerpolicy="no-referrer"
     />
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-252974128-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-252974128-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'UA-252974128-1');
-</script>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1202677597419038"
-     crossorigin="anonymous"></script>
-    <link rel="shortcut icon" type="image/x-icon" href="sgplogo.png" />
+      gtag("config", "UA-252974128-1");
+    </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1202677597419038" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="img/sgplogo.png" />
     <title>SemiGodProgrammer</title>
   </head>
   <body>
@@ -82,12 +84,34 @@
       <div class="right"></div>
     </projects>
     <footer>
-      <img src="sgplogo.png" alt="logo" />
+      <img src="img/sgplogo.png" alt="logo" />
       <span>
         &copy; SemiGodProgrammer 2022 -
         <span class="date"> </span>
       </span>
     </footer>
+    <cursor-trail>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+    </cursor-trail>
     <script>
       document.querySelector(".date").innerText = new Date().getFullYear();
     </script>
