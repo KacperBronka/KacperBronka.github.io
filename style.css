@@ -141,6 +141,7 @@ projects ul li {
   grid-template-columns: 20px 1fr;
   justify-content: center;
   align-items: center;
+  position: relative;
   gap: 10px;
   padding: 15px;
   margin-block: 5px;
@@ -151,6 +152,30 @@ projects ul li {
 projects ul li:hover {
   background-color: rgba(255, 255, 255, 0.103);
   width: 120%;
+}
+projects ul li::before {
+  content: attr(data-tooltip);
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #111111ec;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  justify-content: center;
+  border-radius: 5px;
+  color: transparent;
+  translate: 0% -100%;
+  inset: -4px;
+  /* visibility: hidden; */
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 300ms, color 500ms;
+}
+projects ul li:hover::before {
+  color: white;
+  /* visibility: visible; */
+  opacity: 1;
 }
 projects ul a {
   color: white;
