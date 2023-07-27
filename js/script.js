@@ -15,7 +15,7 @@ if (window.innerWidth < 500) {
 const geometry = new THREE.BoxGeometry(boxSize, boxSize, boxSize, 30, 30, 30);
 
 const particlesGeometry = new THREE.BufferGeometry();
-const particlesCnt = 5000;
+const particlesCnt = window.innerWidth >= 500 ? 5000 : 2000;
 
 const posArr = new Float32Array(particlesCnt * 3);
 
@@ -43,7 +43,6 @@ const particlesMaterial = new THREE.PointsMaterial({
 const sphere = new THREE.Points(geometry, material);
 const particles = new THREE.Points(particlesGeometry, particlesMaterial);
 scene.add(sphere, particles);
-
 // Lights
 
 const pointLight = new THREE.PointLight(0xffffff, 0.1);
